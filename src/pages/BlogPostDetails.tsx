@@ -1,12 +1,12 @@
 import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { Calendar, Phone, ArrowLeft } from 'lucide-react';
-import { blogData } from '../components/blogPost'; 
+import { blogDatas } from '../components/blogData'; 
 
-const BlogPost = () => {
+const  BlogPostDetails = () => {
   const { serviceId } = useParams();
   
-  const post = blogData[serviceId];
+  const post = blogDatas[serviceId];
 
   if (!post) {
     return <Navigate to="/" replace />;
@@ -128,4 +128,4 @@ const BlogPost = () => {
   );
 };
 
-export default BlogPost;
+export default BlogPostDetails;

@@ -1,4 +1,4 @@
-export const blogData = {
+export const blogDatas = {
 "pain-management": {
     id: "pain-management",
     title: "Pain Management",
