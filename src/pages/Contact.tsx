@@ -51,8 +51,8 @@ const Contact: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <div className="bg-white rounded-xl shadow-lg p-8 mb-8">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">Contact Information</h2>
+              <div className="bg-white rounded-xl shadow-lg p-4 md:p-8 mb-8">
+                <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-6">Contact Information</h2>
                 
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
@@ -80,17 +80,21 @@ const Contact: React.FC = () => {
                     </div>
                   </div>
 
-                  <div className="flex items-start space-x-4">
-                    <div className="bg-purple-100 p-3 rounded-full">
-                      <Mail className="text-purple-600" size={24} />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-900">Email</h4>
-                      <a href="mailto:info@adidianphysiotherapyclinic.com" className="text-gray-600 hover:text-blue-600">
-                        adidianphysiotherapyclinic@gmail.com
-                      </a>
-                    </div>
-                  </div>
+                  <div className="flex flex-col sm:flex-row sm:items-start sm:space-x-4 space-y-3 sm:space-y-0">
+  <div className="bg-purple-100 p-3 rounded-full flex-shrink-0 self-start sm:self-auto">
+    <Mail className="text-purple-600" size={24} />
+  </div>
+  <div>
+    <h4 className="font-semibold text-gray-900">Email</h4>
+    <a
+      href="mailto:info@adidianphysiotherapyclinic.com"
+      className="text-gray-600 hover:text-blue-600 text-base break-words"
+    >
+      adidianphysiotherapyclinic@gmail.com
+    </a>
+  </div>
+</div>
+                  
 
                   <div className="flex items-start space-x-4">
                     <div className="bg-orange-100 p-3 rounded-full">
